@@ -67,7 +67,7 @@ export function FloatingActions({ onBook }: { onBook: () => void }) {
         href={business.whatsappHref}
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="Chat with Preet Interiors on WhatsApp"
+        aria-label={`Chat with ${business.name} on WhatsApp`}
         className={cn(
           "fixed bottom-6 right-6 z-30 hidden items-center gap-2.5 rounded-full bg-ink py-3 pl-4 pr-5 text-paper shadow-lg transition-all duration-500 hover:bg-clay md:inline-flex",
           showDesktop ? "translate-y-0 opacity-100" : "pointer-events-none translate-y-3 opacity-0"

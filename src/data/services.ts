@@ -1,5 +1,5 @@
 /*
-  Services offered by Preet Interiors.
+  Services offered by Vantara Interiors.
   Add, remove or edit entries here — the Services section renders
   directly from this list.
 */

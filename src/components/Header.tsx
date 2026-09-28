@@ -14,17 +14,17 @@ function Wordmark({ onClick }: { onClick?: () => void }) {
       href="#home"
       onClick={onClick}
       className="flex items-center gap-3"
-      aria-label="Preet Interiors — home"
+      aria-label={`${business.name} — home`}
     >
       <span
         aria-hidden="true"
         className="grid h-9 w-9 shrink-0 place-items-center bg-clay font-serif text-lg text-paper"
       >
-        P
+        V
       </span>
       <span className="leading-tight">
         <span className="block font-serif text-[19px] font-medium tracking-tight text-ink">
-          Preet Interiors
+          {business.name}
         </span>
         <span className="hidden text-[10px] font-semibold uppercase tracking-[0.2em] text-taupe sm:block">
           Interior Design · Delhi

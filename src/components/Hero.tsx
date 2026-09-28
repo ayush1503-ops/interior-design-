@@ -13,7 +13,7 @@ export function Hero({ onBook }: HeroProps) {
         {/* Large editorial photograph — the first impression */}
         <img
           src="/images/hero.jpg"
-          alt="Warm contemporary living room designed by Preet Interiors, with a cream linen sofa, walnut panelling and soft afternoon light"
+          alt={`Warm contemporary living room designed by ${business.name}, with a cream linen sofa, walnut panelling and soft afternoon light`}
           className="absolute inset-0 h-full w-full object-cover"
           fetchPriority="high"
           decoding="async"
@@ -27,7 +27,7 @@ export function Hero({ onBook }: HeroProps) {
         <div className="relative z-10 mx-auto w-full max-w-6xl px-5 pb-16 pt-40 sm:px-8 md:pb-24">
           <Reveal>
             <p className="label text-paper/75">
-              Interior Design Studio — Krishna Nagar, Delhi
+              Interior Design Studio — {business.locality}, {business.city}
             </p>
 
             <h1 className="mt-5 max-w-3xl font-serif text-[2.65rem] font-light leading-[1.05] tracking-tight text-paper sm:text-6xl lg:text-[4.4rem]">
@@ -63,7 +63,7 @@ export function Hero({ onBook }: HeroProps) {
         <div className="mx-auto flex w-full max-w-6xl flex-wrap items-center justify-between gap-x-6 gap-y-2 px-5 py-4 text-[13px] sm:px-8">
           <p className="flex items-center gap-2 text-taupe">
             <MapPin size={14} aria-hidden="true" className="text-clay" />
-            {business.locality}, {business.city} — 110051
+            {business.locality}, {business.city} — 110001
           </p>
           <a
             href={business.phoneHref}

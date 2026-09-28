@@ -1,4 +1,5 @@
 import { ArrowRight } from "lucide-react";
+import { business } from "../config/business";
 import { Reveal } from "./Reveal";
 import { SectionLabel } from "./ui";
 
@@ -11,7 +12,7 @@ export function AboutPreview() {
           <div className="img-zoom overflow-hidden">
             <img
               src="/images/about.jpg"
-              alt="Reading corner styled by Preet Interiors with a bouclé armchair, oak side table and warm lamplight"
+              alt={`Reading corner styled by ${business.name} with a bouclé armchair, oak side table and warm lamplight`}
               className="aspect-[4/5] w-full object-cover"
               loading="lazy"
               decoding="async"
@@ -29,7 +30,7 @@ export function AboutPreview() {
         </Reveal>
 
         <Reveal delay={120}>
-          <SectionLabel>Preet Interiors</SectionLabel>
+          <SectionLabel>{business.name}</SectionLabel>
 
           <h2
             id="about-heading"
@@ -39,8 +40,7 @@ export function AboutPreview() {
           </h2>
 
           <p className="mt-6 text-[15px] leading-relaxed text-taupe sm:text-base">
-            Preet Interiors is an interior design studio based in Krishna Nagar,
-            Delhi, working on homes and small commercial spaces across the city.
+            {business.name} is an interior design studio based in {business.locality}, {business.city}, working on homes and boutique commercial spaces across the city.
           </p>
           <p className="mt-4 text-[15px] leading-relaxed text-taupe sm:text-base">
             We believe good design starts with listening. Every project begins
@@ -53,7 +53,7 @@ export function AboutPreview() {
             href="#why"
             className="group mt-8 inline-flex items-center gap-2 border-b border-ink pb-1 text-sm font-medium text-ink transition-colors hover:border-clay hover:text-clay"
           >
-            About Preet Interiors
+            About {business.name}
             <ArrowRight
               size={15}
               aria-hidden="true"

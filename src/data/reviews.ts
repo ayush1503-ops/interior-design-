@@ -1,7 +1,7 @@
 /*
   REVIEWS
   ─────────────────────────────────────────────────────────────
-  Preet Interiors collects genuine reviews on its Google Business
+  Vantara Interiors collects genuine reviews on its Google Business
   profile — the Reviews section links visitors there directly.
 
   No quotes are displayed until real review text is added here.

@@ -49,7 +49,7 @@ export const projects: Project[] = [
     slug: "family-apartment-east-delhi",
     title: "Family Apartment",
     category: "Residential",
-    location: "East Delhi",
+    location: "Greenview Enclave, Delhi",
     summary:
       "A complete home interior planned as one connected story — open living and dining, warm wood finishes, layered lighting, and storage worked into every room.",
     cover: "/images/projects/residence-1.jpg",
@@ -81,7 +81,7 @@ export const projects: Project[] = [
     slug: "warm-contemporary-living-room",
     title: "Warm Contemporary Living Room",
     category: "Living Room",
-    location: "Krishna Nagar, Delhi",
+    location: "Sector 21, New Delhi",
     summary:
       "A living room reworked around comfort and evening use — a walnut slat media wall, deep soft seating and lighting that can shift from bright to warm.",
     cover: "/images/projects/living-1.jpg",
@@ -137,7 +137,7 @@ export const projects: Project[] = [
     slug: "compact-modular-kitchen",
     title: "Compact Modular Kitchen",
     category: "Kitchen",
-    location: "East Delhi",
+    location: "Vasant Vihar, Delhi",
     summary:
       "A practical modular kitchen in a compact footprint — handleless matte cabinets below, warm walnut above, and drawers planned for real daily cooking.",
     cover: "/images/projects/kitchen-1.jpg",

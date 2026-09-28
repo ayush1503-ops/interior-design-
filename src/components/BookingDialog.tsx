@@ -251,7 +251,7 @@ export function BookingDialog({ open, onClose }: BookingDialogProps) {
                   Thank you{form.name ? `, ${form.name.trim().split(" ")[0]}` : ""}.
                 </h3>
                 <p className="mt-3 text-[15px] leading-relaxed text-ink/80">
-                  Your consultation request has been received. Preet Interiors
+                  Your consultation request has been received. {business.name}{" "}
                   will contact you
                   {form.phone ? ` on ${normalizePhone(form.phone)}` : ""} to
                   confirm the appointment.
@@ -384,7 +384,7 @@ export function BookingDialog({ open, onClose }: BookingDialogProps) {
               <Field
                 label="Location / area"
                 htmlFor={inputId("location")}
-                hint="e.g. Krishna Nagar, Preet Vihar, Laxmi Nagar"
+                hint="e.g. Greenview Enclave, Sector 21, South Extension"
               >
                 <input
                   id={inputId("location")}

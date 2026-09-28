@@ -46,17 +46,17 @@ export interface EnquiryRecord {
   projectSize?: string;
 }
 
-const STORAGE_KEY = "preet-interiors.enquiries.v1";
+const STORAGE_KEY = "vantara-interiors.enquiries.v1";
 
 function makeId(): string {
   try {
     if (typeof crypto !== "undefined" && "randomUUID" in crypto) {
-      return "PI-" + crypto.randomUUID().slice(0, 8).toUpperCase();
+      return "VI-" + crypto.randomUUID().slice(0, 8).toUpperCase();
     }
   } catch {
     /* fall through */
   }
-  return "PI-" + Math.random().toString(36).slice(2, 10).toUpperCase();
+  return "VI-" + Math.random().toString(36).slice(2, 10).toUpperCase();
 }
 
 export function saveEnquiry(

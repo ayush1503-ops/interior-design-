@@ -1,5 +1,6 @@
 import { useRef, useState, type FormEvent } from "react";
 import { CheckCircle2 } from "lucide-react";
+import { business } from "../config/business";
 import { saveEnquiry } from "../lib/enquiries";
 import {
   isValidEmail,
@@ -107,7 +108,7 @@ export function EnquiryForm() {
           Thank you{form.name ? `, ${form.name.trim().split(" ")[0]}` : ""}.
         </h3>
         <p className="mt-3 max-w-md text-[15px] leading-relaxed text-ink/80">
-          Your enquiry has been received. Preet Interiors will get back to you
+          Your enquiry has been received. {business.name} will get back to you
           shortly — for anything urgent, call or WhatsApp us directly.
         </p>
         <p className="mt-4 text-sm text-taupe">

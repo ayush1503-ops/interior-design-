@@ -113,7 +113,7 @@ export function ContactSection({ onBook }: ContactSectionProps) {
         <Reveal>
           <div className="border border-line">
             <iframe
-              title="Map showing the location of Preet Interiors, Krishna Nagar, Delhi"
+              title={`Map showing the location of ${business.name}, ${business.locality}, ${business.city}`}
               src={business.mapsEmbed}
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
@@ -122,7 +122,7 @@ export function ContactSection({ onBook }: ContactSectionProps) {
             />
             <div className="flex flex-wrap items-center justify-between gap-3 border-t border-line bg-paper px-5 py-4 sm:px-6">
               <p className="text-sm text-taupe">
-                {business.name} — Krishna Nagar, Delhi 110051
+                {business.name} — {business.locality}, {business.city} 110001
               </p>
               <a
                 href={business.mapsLink}

@@ -1,5 +1,5 @@
 /*
-  The studio's working process and reasons to choose Preet Interiors.
+  The studio's working process and reasons to choose Vantara Interiors.
   Edit copy here — section components render from these lists.
 */
 

@@ -1,3 +1,4 @@
+import { business } from "../config/business";
 import { reasons } from "../data/process";
 import { Reveal } from "./Reveal";
 
@@ -16,7 +17,7 @@ export function WhyUs({ onBook }: WhyUsProps) {
         <Reveal>
           <p className="label text-clay" style={{ color: "#cf9a72" }}>
             <span aria-hidden="true" className="mr-3 inline-block h-px w-8 bg-[#cf9a72]/60 align-middle" />
-            Why Preet Interiors
+            Why {business.name}
           </p>
           <h2
             id="why-heading"

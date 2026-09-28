@@ -23,15 +23,15 @@ export function Footer() {
         <div className="grid gap-12 md:grid-cols-[1.4fr_1fr_1fr] lg:gap-20">
           {/* Brand */}
           <div>
-            <a href="#home" className="flex items-center gap-3" aria-label="Preet Interiors — back to top">
+            <a href="#home" className="flex items-center gap-3" aria-label={`${business.name} — back to top`}>
               <span
                 aria-hidden="true"
                 className="grid h-9 w-9 place-items-center bg-clay font-serif text-lg text-paper"
               >
-                P
+                V
               </span>
               <span className="font-serif text-xl font-medium tracking-tight">
-                Preet Interiors
+                {business.name}
               </span>
             </a>
             <p className="mt-3 text-[11px] font-semibold uppercase tracking-[0.22em] text-paper/50">
@@ -99,7 +99,7 @@ export function Footer() {
 
         <div className="mt-14 flex flex-col gap-2 border-t border-paper/15 pt-7 text-[13px] text-paper/50 sm:flex-row sm:items-center sm:justify-between">
           <p>© {new Date().getFullYear()} {business.name}. All rights reserved.</p>
-          <p>{business.locality}, {business.city} — 110051</p>
+          <p>{business.locality}, {business.city} — 110001</p>
         </div>
       </div>
     </footer>
